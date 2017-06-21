@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: add_executable
+# key: exe
+# --
+
+add_executable($1 $1Cmd.cpp $1.cpp)
+
+add_executable($1Test $1Test.cpp $1.cpp)
+target_link_libraries($1Test gtest)
+
+add_test($1Test $1Test)

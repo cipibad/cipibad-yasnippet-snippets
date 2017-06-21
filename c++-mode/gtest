@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: gtest
+# key: gtest
+# group: testing
+# --
+TEST($1, ${2:Does$1}) {
+  $0
+}
